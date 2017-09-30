@@ -11,4 +11,7 @@ import Foundation
 struct Constant{
     static let urlShops: String = "https://madrid-shops.com/json_new/getShops.php"
     static let urlActivities: String = "https://madrid-shops.com/json_new/getActivities.php"
+    
+    static let shopTypeKey = "ShopKey"
+    static let activityTypeKey = "ActivityKey"
 }

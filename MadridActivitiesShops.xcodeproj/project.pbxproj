@@ -31,6 +31,10 @@
 		DF20CCDE1F802EA200C99F59 /* SaveAllActivitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCDD1F802EA200C99F59 /* SaveAllActivitiesInteractor.swift */; };
 		DF20CCE11F802EFE00C99F59 /* SaveAllShopsInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCE01F802EFE00C99F59 /* SaveAllShopsInteractorImpl.swift */; };
 		DF20CCE31F802F2D00C99F59 /* SaveAllActivitiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCE21F802F2D00C99F59 /* SaveAllActivitiesInteractorImpl.swift */; };
+		DF20CCE61F803AF500C99F59 /* ExecuteOnceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCE51F803AF500C99F59 /* ExecuteOnceInteractor.swift */; };
+		DF20CCE81F803B2000C99F59 /* SetExecutedOnceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCE71F803B2000C99F59 /* SetExecutedOnceInteractor.swift */; };
+		DF2361541F803F5D005149CA /* ExecuteOnceInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2361531F803F5D005149CA /* ExecuteOnceInteractorImpl.swift */; };
+		DF2361561F804050005149CA /* SetExecutedOnceInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2361551F804050005149CA /* SetExecutedOnceInteractorImpl.swift */; };
 		DF5762C71F7FA0F800690C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5762C61F7FA0F800690C55 /* AppDelegate.swift */; };
 		DF5762C91F7FA0F800690C55 /* MapShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5762C81F7FA0F800690C55 /* MapShopListViewController.swift */; };
 		DF5762CC1F7FA0F800690C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5762CA1F7FA0F800690C55 /* Main.storyboard */; };
@@ -82,6 +86,10 @@
 		DF20CCDD1F802EA200C99F59 /* SaveAllActivitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllActivitiesInteractor.swift; sourceTree = "<group>"; };
 		DF20CCE01F802EFE00C99F59 /* SaveAllShopsInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllShopsInteractorImpl.swift; sourceTree = "<group>"; };
 		DF20CCE21F802F2D00C99F59 /* SaveAllActivitiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllActivitiesInteractorImpl.swift; sourceTree = "<group>"; };
+		DF20CCE51F803AF500C99F59 /* ExecuteOnceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteOnceInteractor.swift; sourceTree = "<group>"; };
+		DF20CCE71F803B2000C99F59 /* SetExecutedOnceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExecutedOnceInteractor.swift; sourceTree = "<group>"; };
+		DF2361531F803F5D005149CA /* ExecuteOnceInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteOnceInteractorImpl.swift; sourceTree = "<group>"; };
+		DF2361551F804050005149CA /* SetExecutedOnceInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExecutedOnceInteractorImpl.swift; sourceTree = "<group>"; };
 		DF5762C31F7FA0F800690C55 /* MadridActivitiesShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridActivitiesShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5762C61F7FA0F800690C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF5762C81F7FA0F800690C55 /* MapShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShopListViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +160,25 @@
 			children = (
 				DF20CCE01F802EFE00C99F59 /* SaveAllShopsInteractorImpl.swift */,
 				DF20CCE21F802F2D00C99F59 /* SaveAllActivitiesInteractorImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		DF20CCE41F803AC800C99F59 /* UserDefaultInteractors */ = {
+			isa = PBXGroup;
+			children = (
+				DF2361521F803DC6005149CA /* Impl */,
+				DF20CCE51F803AF500C99F59 /* ExecuteOnceInteractor.swift */,
+				DF20CCE71F803B2000C99F59 /* SetExecutedOnceInteractor.swift */,
+			);
+			path = UserDefaultInteractors;
+			sourceTree = "<group>";
+		};
+		DF2361521F803DC6005149CA /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				DF2361531F803F5D005149CA /* ExecuteOnceInteractorImpl.swift */,
+				DF2361551F804050005149CA /* SetExecutedOnceInteractorImpl.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -241,6 +268,7 @@
 		DF5762F51F7FB0F300690C55 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				DF20CCE41F803AC800C99F59 /* UserDefaultInteractors */,
 				DF20CCDA1F802E5800C99F59 /* CacheInteractors */,
 				DF5762F81F7FB27F00690C55 /* Impl */,
 				DF0C73701F7FEA4B0073DEC7 /* DownloadAllShopsInteractor.swift */,
@@ -385,19 +413,23 @@
 				DF20CCE31F802F2D00C99F59 /* SaveAllActivitiesInteractorImpl.swift in Sources */,
 				DF0C73671F7FC8320073DEC7 /* MapShopListViewController+CollectionViewController.swift in Sources */,
 				DF20CCD41F80206300C99F59 /* MadridActivitiesShops.xcdatamodeld in Sources */,
+				DF20CCE61F803AF500C99F59 /* ExecuteOnceInteractor.swift in Sources */,
 				DF1FAE4A1F80093700476BA6 /* ShopDetailViewController.swift in Sources */,
 				DF20CCD71F802D1800C99F59 /* MapShops.swift in Sources */,
 				DF5762FC1F7FB33800690C55 /* Typealias.swift in Sources */,
 				DF0C73771F7FEECC0073DEC7 /* ShopCell.swift in Sources */,
 				DF0C73751F7FED530073DEC7 /* MapActivityListViewController+CollectionViewController.swift in Sources */,
+				DF2361541F803F5D005149CA /* ExecuteOnceInteractorImpl.swift in Sources */,
 				DF0C73731F7FEB6E0073DEC7 /* MapActivityListViewController.swift in Sources */,
 				DF0C73691F7FD4370073DEC7 /* MainViewController.swift in Sources */,
 				DF20CCD91F802D3D00C99F59 /* MapActivities.swift in Sources */,
 				DF20CCDC1F802E7400C99F59 /* SaveAllShopsInteractor.swift in Sources */,
 				DF0C73791F7FEF130073DEC7 /* ActivityCell.swift in Sources */,
 				DF5762FF1F7FB3B900690C55 /* DownloadAllActivitiesInteractorFakeImpl.swift in Sources */,
+				DF2361561F804050005149CA /* SetExecutedOnceInteractorImpl.swift in Sources */,
 				DF5762EA1F7FA38D00690C55 /* Shop.swift in Sources */,
 				DF1FAE3B1F7FFFAA00476BA6 /* Constant.swift in Sources */,
+				DF20CCE81F803B2000C99F59 /* SetExecutedOnceInteractor.swift in Sources */,
 				DF5762F21F7FAC6900690C55 /* Activities.swift in Sources */,
 				DF5762C91F7FA0F800690C55 /* MapShopListViewController.swift in Sources */,
 				DF0C73711F7FEA4B0073DEC7 /* DownloadAllShopsInteractor.swift in Sources */,
