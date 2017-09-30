@@ -17,7 +17,7 @@ class MapActivityListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let downloadActivityInteractor: DownloadAllActivitiesInteractor = DownloadAllActivitiesInteractorNSOpImpl()
+        let downloadActivityInteractor: DownloadAllActivitiesInteractor = DownloadAllActivitiesInteractorNSURLSessionImpl()
         
         downloadActivityInteractor.execute { (activities: Activities) in
             self.activities = activities
