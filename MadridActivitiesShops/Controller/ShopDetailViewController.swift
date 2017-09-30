@@ -10,26 +10,17 @@ import UIKit
 
 class ShopDetailViewController: UIViewController {
 
+    var shop: Shop!
+    
+    @IBOutlet weak var shopDetailDescription: UITextView!
+    @IBOutlet weak var shopImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.title = self.shop.name
+        self.shopDetailDescription.text = self.shop.description
+        self.shop.image.loadImage(into: shopImage)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

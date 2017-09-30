@@ -26,4 +26,17 @@ class MapActivityListViewController: UIViewController {
             self.activityCollectionView.dataSource = self
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let activity = self.activities?.get(index: indexPath.row)
+        self.performSegue(withIdentifier: "ShowActivityDetailSegue", sender: activity)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowActivityDetailSegue" {
+            
+            let vc = segue.destination as! ActivityDetailViewController
+            vc.activity = sender as! Activity
+        }
+    }
 }

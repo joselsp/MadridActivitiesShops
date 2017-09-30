@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map Shop List View Controller-->
+        <!--Shops-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapShopListViewController" customModule="MadridActivitiesShops" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,14 +71,48 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GHE-pS-733"/>
+                    <navigationItem key="navigationItem" title="Shops" id="GHE-pS-733"/>
                     <connections>
                         <outlet property="shopCollectionView" destination="t8T-Qp-ejm" id="cLm-PA-5Pa"/>
+                        <segue destination="Mhy-Gk-ekd" kind="show" identifier="ShowShopDetailSegue" id="WiG-Xn-RW8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1342" y="-234"/>
+        </scene>
+        <!--Shop Detail View Controller-->
+        <scene sceneID="ilb-SJ-umd">
+            <objects>
+                <viewController id="Mhy-Gk-ekd" customClass="ShopDetailViewController" customModule="MadridActivitiesShops" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aB0-Gf-y5i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NQR-aZ-Wt3">
+                                <rect key="frame" x="16" y="64" width="343" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ec-gp-3px">
+                                <rect key="frame" x="16" y="452" width="343" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ZMN-ec-8pW"/>
+                    </view>
+                    <connections>
+                        <outlet property="shopDetailDescription" destination="NQR-aZ-Wt3" id="FQr-UU-VvK"/>
+                        <outlet property="shopImage" destination="7Ec-gp-3px" id="qBZ-Uh-1WP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRh-H1-uQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200.8000000000002" y="-234.33283358320841"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pZ0-z9-caA">
@@ -132,7 +166,7 @@
             </objects>
             <point key="canvasLocation" x="536.79999999999995" y="133.5832083958021"/>
         </scene>
-        <!--Map Activity List View Controller-->
+        <!--Activities-->
         <scene sceneID="Sf0-LS-SsX">
             <objects>
                 <viewController id="iBA-ww-CB4" customClass="MapActivityListViewController" customModule="MadridActivitiesShops" customModuleProvider="target" sceneMemberID="viewController">
@@ -194,14 +228,48 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="69h-JQ-NKf"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qW3-Ox-SYl"/>
+                    <navigationItem key="navigationItem" title="Activities" id="qW3-Ox-SYl"/>
                     <connections>
                         <outlet property="activityCollectionView" destination="WXV-sp-5Dg" id="O8A-H7-tRk"/>
+                        <segue destination="6ws-9I-2vf" kind="show" identifier="ShowActivityDetailSegue" id="dKB-9k-pod"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93f-8k-KVZ" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1342" y="533"/>
+        </scene>
+        <!--Activity Detail View Controller-->
+        <scene sceneID="iRk-Jf-Z07">
+            <objects>
+                <viewController id="6ws-9I-2vf" customClass="ActivityDetailViewController" customModule="MadridActivitiesShops" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OPD-Wu-PQ8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M7W-wW-Arh">
+                                <rect key="frame" x="16" y="64" width="343" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tU1-tn-3f8">
+                                <rect key="frame" x="16" y="452" width="343" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JmK-Mz-LB9"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityDetailDescription" destination="M7W-wW-Arh" id="GKJ-2T-hd2"/>
+                        <outlet property="activityImage" destination="tU1-tn-3f8" id="Y4C-Yg-RFC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5b-LU-ySz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2180" y="532.98350824587715"/>
         </scene>
     </scenes>
 </document>

@@ -26,5 +26,18 @@ class MapShopListViewController: UIViewController {
             self.shopCollectionView.dataSource = self
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let shop = self.shops?.get(index: indexPath.row)
+        self.performSegue(withIdentifier: "ShowShopDetailSegue", sender: shop)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowShopDetailSegue" {
+            
+            let vc = segue.destination as! ShopDetailViewController            
+            vc.shop = sender as! Shop
+        }
+    }
 }
 
