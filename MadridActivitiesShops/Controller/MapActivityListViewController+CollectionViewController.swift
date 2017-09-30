@@ -11,23 +11,21 @@ import UIKit
 extension MapActivityListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return fetchedResultsController.sections?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let activities = self.activities {
-            return activities.count()
-        }
-        return 0
+        let sectionInfo = fetchedResultsController.sections![section]
+        return sectionInfo.numberOfObjects
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: ActivityCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActivityCell", for: indexPath) as! ActivityCell
         
-        let activity: Activity = (self.activities?.get(index: indexPath.row))!
+        let activityCD: ActivityCD = fetchedResultsController.object(at: indexPath)
         
-        cell.refresh(activity: activity)
+        cell.refresh(activity: mapActivityCDIntoActivity(activityCD: activityCD))
         
         return cell
         

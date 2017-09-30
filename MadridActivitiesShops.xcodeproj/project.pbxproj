@@ -23,6 +23,14 @@
 		DF1FAE461F80065200476BA6 /* DownloadAllActivitiesInteractorNSURLSessionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1FAE451F80065200476BA6 /* DownloadAllActivitiesInteractorNSURLSessionImpl.swift */; };
 		DF1FAE4A1F80093700476BA6 /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1FAE491F80093700476BA6 /* ShopDetailViewController.swift */; };
 		DF1FAE4C1F80098300476BA6 /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1FAE4B1F80098300476BA6 /* ActivityDetailViewController.swift */; };
+		DF20CCD11F801F9B00C99F59 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCD01F801F9B00C99F59 /* CoreDataStack.swift */; };
+		DF20CCD41F80206300C99F59 /* MadridActivitiesShops.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCD21F80206300C99F59 /* MadridActivitiesShops.xcdatamodeld */; };
+		DF20CCD71F802D1800C99F59 /* MapShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCD61F802D1800C99F59 /* MapShops.swift */; };
+		DF20CCD91F802D3D00C99F59 /* MapActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCD81F802D3D00C99F59 /* MapActivities.swift */; };
+		DF20CCDC1F802E7400C99F59 /* SaveAllShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCDB1F802E7400C99F59 /* SaveAllShopsInteractor.swift */; };
+		DF20CCDE1F802EA200C99F59 /* SaveAllActivitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCDD1F802EA200C99F59 /* SaveAllActivitiesInteractor.swift */; };
+		DF20CCE11F802EFE00C99F59 /* SaveAllShopsInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCE01F802EFE00C99F59 /* SaveAllShopsInteractorImpl.swift */; };
+		DF20CCE31F802F2D00C99F59 /* SaveAllActivitiesInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCE21F802F2D00C99F59 /* SaveAllActivitiesInteractorImpl.swift */; };
 		DF5762C71F7FA0F800690C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5762C61F7FA0F800690C55 /* AppDelegate.swift */; };
 		DF5762C91F7FA0F800690C55 /* MapShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5762C81F7FA0F800690C55 /* MapShopListViewController.swift */; };
 		DF5762CC1F7FA0F800690C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5762CA1F7FA0F800690C55 /* Main.storyboard */; };
@@ -66,6 +74,14 @@
 		DF1FAE451F80065200476BA6 /* DownloadAllActivitiesInteractorNSURLSessionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllActivitiesInteractorNSURLSessionImpl.swift; sourceTree = "<group>"; };
 		DF1FAE491F80093700476BA6 /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
 		DF1FAE4B1F80098300476BA6 /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		DF20CCD01F801F9B00C99F59 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DF20CCD31F80206300C99F59 /* MadridActivityShops.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MadridActivityShops.xcdatamodel; sourceTree = "<group>"; };
+		DF20CCD61F802D1800C99F59 /* MapShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShops.swift; sourceTree = "<group>"; };
+		DF20CCD81F802D3D00C99F59 /* MapActivities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapActivities.swift; sourceTree = "<group>"; };
+		DF20CCDB1F802E7400C99F59 /* SaveAllShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllShopsInteractor.swift; sourceTree = "<group>"; };
+		DF20CCDD1F802EA200C99F59 /* SaveAllActivitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllActivitiesInteractor.swift; sourceTree = "<group>"; };
+		DF20CCE01F802EFE00C99F59 /* SaveAllShopsInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllShopsInteractorImpl.swift; sourceTree = "<group>"; };
+		DF20CCE21F802F2D00C99F59 /* SaveAllActivitiesInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllActivitiesInteractorImpl.swift; sourceTree = "<group>"; };
 		DF5762C31F7FA0F800690C55 /* MadridActivitiesShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridActivitiesShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5762C61F7FA0F800690C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF5762C81F7FA0F800690C55 /* MapShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShopListViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +126,34 @@
 				DF1FAE3D1F80007D00476BA6 /* JSONParser.swift */,
 			);
 			path = "Json Parser";
+			sourceTree = "<group>";
+		};
+		DF20CCD51F802CF000C99F59 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				DF20CCD61F802D1800C99F59 /* MapShops.swift */,
+				DF20CCD81F802D3D00C99F59 /* MapActivities.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		DF20CCDA1F802E5800C99F59 /* CacheInteractors */ = {
+			isa = PBXGroup;
+			children = (
+				DF20CCDF1F802EE800C99F59 /* Impl */,
+				DF20CCDB1F802E7400C99F59 /* SaveAllShopsInteractor.swift */,
+				DF20CCDD1F802EA200C99F59 /* SaveAllActivitiesInteractor.swift */,
+			);
+			path = CacheInteractors;
+			sourceTree = "<group>";
+		};
+		DF20CCDF1F802EE800C99F59 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				DF20CCE01F802EFE00C99F59 /* SaveAllShopsInteractorImpl.swift */,
+				DF20CCE21F802F2D00C99F59 /* SaveAllActivitiesInteractorImpl.swift */,
+			);
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		DF5762BA1F7FA0F800690C55 = {
@@ -182,12 +226,14 @@
 		DF5762E81F7FA31500690C55 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DF20CCD51F802CF000C99F59 /* Mappers */,
 				DF1FAE3C1F80005D00476BA6 /* Json Parser */,
 				DF5762F51F7FB0F300690C55 /* Interactors */,
 				DF5762E91F7FA38D00690C55 /* Shop.swift */,
 				DF5762ED1F7FA84D00690C55 /* Shops.swift */,
 				DF5762EF1F7FAA4800690C55 /* Activity.swift */,
 				DF5762F11F7FAC6900690C55 /* Activities.swift */,
+				DF20CCD21F80206300C99F59 /* MadridActivitiesShops.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +241,7 @@
 		DF5762F51F7FB0F300690C55 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				DF20CCDA1F802E5800C99F59 /* CacheInteractors */,
 				DF5762F81F7FB27F00690C55 /* Impl */,
 				DF0C73701F7FEA4B0073DEC7 /* DownloadAllShopsInteractor.swift */,
 			);
@@ -220,6 +267,7 @@
 				DF5762FB1F7FB33800690C55 /* Typealias.swift */,
 				DF1FAE3A1F7FFFAA00476BA6 /* Constant.swift */,
 				DF1FAE411F8003CA00476BA6 /* String+Image.swift */,
+				DF20CCD01F801F9B00C99F59 /* CoreDataStack.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -329,17 +377,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF1FAE4C1F80098300476BA6 /* ActivityDetailViewController.swift in Sources */,
+				DF20CCDE1F802EA200C99F59 /* SaveAllActivitiesInteractor.swift in Sources */,
 				DF1FAE441F8005B300476BA6 /* DownloadAllShopsInteractorNSURLSessionImpl.swift in Sources */,
 				DF5762F01F7FAA4800690C55 /* Activity.swift in Sources */,
 				DF1FAE3E1F80007D00476BA6 /* JSONParser.swift in Sources */,
 				DF1FAE391F7FFF8900476BA6 /* DownloadAllShopsInteractorNSOpImpl.swift in Sources */,
+				DF20CCE31F802F2D00C99F59 /* SaveAllActivitiesInteractorImpl.swift in Sources */,
 				DF0C73671F7FC8320073DEC7 /* MapShopListViewController+CollectionViewController.swift in Sources */,
+				DF20CCD41F80206300C99F59 /* MadridActivitiesShops.xcdatamodeld in Sources */,
 				DF1FAE4A1F80093700476BA6 /* ShopDetailViewController.swift in Sources */,
+				DF20CCD71F802D1800C99F59 /* MapShops.swift in Sources */,
 				DF5762FC1F7FB33800690C55 /* Typealias.swift in Sources */,
 				DF0C73771F7FEECC0073DEC7 /* ShopCell.swift in Sources */,
 				DF0C73751F7FED530073DEC7 /* MapActivityListViewController+CollectionViewController.swift in Sources */,
 				DF0C73731F7FEB6E0073DEC7 /* MapActivityListViewController.swift in Sources */,
 				DF0C73691F7FD4370073DEC7 /* MainViewController.swift in Sources */,
+				DF20CCD91F802D3D00C99F59 /* MapActivities.swift in Sources */,
+				DF20CCDC1F802E7400C99F59 /* SaveAllShopsInteractor.swift in Sources */,
 				DF0C73791F7FEF130073DEC7 /* ActivityCell.swift in Sources */,
 				DF5762FF1F7FB3B900690C55 /* DownloadAllActivitiesInteractorFakeImpl.swift in Sources */,
 				DF5762EA1F7FA38D00690C55 /* Shop.swift in Sources */,
@@ -347,7 +401,9 @@
 				DF5762F21F7FAC6900690C55 /* Activities.swift in Sources */,
 				DF5762C91F7FA0F800690C55 /* MapShopListViewController.swift in Sources */,
 				DF0C73711F7FEA4B0073DEC7 /* DownloadAllShopsInteractor.swift in Sources */,
+				DF20CCD11F801F9B00C99F59 /* CoreDataStack.swift in Sources */,
 				DF5762C71F7FA0F800690C55 /* AppDelegate.swift in Sources */,
+				DF20CCE11F802EFE00C99F59 /* SaveAllShopsInteractorImpl.swift in Sources */,
 				DF5762FA1F7FB2B500690C55 /* DownloadAllShopsInteractorFakeImpl.swift in Sources */,
 				DF5762EE1F7FA84D00690C55 /* Shops.swift in Sources */,
 				DF1FAE461F80065200476BA6 /* DownloadAllActivitiesInteractorNSURLSessionImpl.swift in Sources */,
@@ -596,6 +652,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF20CCD21F80206300C99F59 /* MadridActivitiesShops.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF20CCD31F80206300C99F59 /* MadridActivityShops.xcdatamodel */,
+			);
+			currentVersion = DF20CCD31F80206300C99F59 /* MadridActivityShops.xcdatamodel */;
+			path = MadridActivitiesShops.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DF5762BB1F7FA0F800690C55 /* Project object */;
 }

@@ -7,28 +7,26 @@
 //
 
 import UIKit
+import CoreData
 
 class MainViewController: UIViewController {
+    
+    var context: NSManagedObjectContext!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "ShowShopsSegue" {
-//            let vc = segue.destination as! MapShopListViewController
-//            
-//        }
-//        if segue.identifier == "ShowActivitiesSegue" {
-//            let vc = segue.destination as! MapActivityListViewController
-//            
-//        }
+        if segue.identifier == "ShowShopsSegue" {
+            let vc = segue.destination as! MapShopListViewController
+            vc.context = self.context
+        }
+        if segue.identifier == "ShowActivitiesSegue" {
+            let vc = segue.destination as! MapActivityListViewController
+            vc.context = self.context
+        }
     }
 }
