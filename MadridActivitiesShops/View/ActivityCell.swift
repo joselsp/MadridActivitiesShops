@@ -19,5 +19,10 @@ class ActivityCell: UICollectionViewCell {
         self.activity = activity
         
         self.label.text = activity.name
+        self.activity?.logo.loadImageNSURLSession(into: imageView)
+        imageView.clipsToBounds = true
+        UIView.animate(withDuration: 1.0) {
+            self.imageView.layer.cornerRadius = 30
+        }
     }
 }

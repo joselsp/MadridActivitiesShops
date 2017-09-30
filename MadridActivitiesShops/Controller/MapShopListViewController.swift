@@ -17,7 +17,7 @@ class MapShopListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let downloadShopInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorFakeImpl()
+        let downloadShopInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSOpImpl()
             
         downloadShopInteractor.execute { (shops: Shops) in
             self.shops = shops
