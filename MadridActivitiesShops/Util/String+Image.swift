@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 extension String {
     func loadImage(into imageView: UIImageView) {
@@ -33,8 +34,16 @@ extension String {
                     
                     if error == nil {
                         // OK
-                        let image = UIImage(data: data!)
-                        imageView.image = image
+                        let fileName = url.lastPathComponent
+                        print("FileName \(fileName)")
+                        imageView.sd_setImage(with: url, placeholderImage: UIImage(contentsOfFile: fileName), completed: { (image: UIImage?, error: Error?, cacheType: SDImageCacheType, imageURL: URL?) in
+                            if error == nil {
+                                imageView.image = image
+                            } else {
+                                // Error
+                                print("Error: \(error.debugDescription)")
+                            }
+                        })
                     } else {
                         // Error
                         print("Error: \(error.debugDescription)")

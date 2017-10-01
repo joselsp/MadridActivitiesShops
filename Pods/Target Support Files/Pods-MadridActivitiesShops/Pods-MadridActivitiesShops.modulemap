@@ -1,0 +1,6 @@
+framework module Pods_MadridActivitiesShops {
+  umbrella header "Pods-MadridActivitiesShops-umbrella.h"
+
+  export *
+  module * { export * }
+}
