@@ -18,31 +18,8 @@ class MapShopListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ExecuteOnceInteractorImpl(elementTypeKey: Constant.shopTypeKey).execute {
-            initializeData()
-        }
-        
         self.shopCollectionView.delegate = self
         self.shopCollectionView.dataSource = self
-    }
-    
-    func initializeData() {
-        let downloadShopInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSURLSessionImpl()
-        
-        downloadShopInteractor.execute { (shops: Shops) in
-            
-            let cacheInteractor = SaveAllShopsInteractorImpl()
-            cacheInteractor.execute(shops: shops, context: self.context, onSuccess: { (shops: Shops)
-                in
-                
-                SetExecutedOnceInteractorImpl(elementTypeKey: Constant.shopTypeKey).execute()
-                
-                self._fetchedResultsController = nil
-                self.shopCollectionView.delegate = self
-                self.shopCollectionView.dataSource = self
-                self.shopCollectionView.reloadData()
-            })
-        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

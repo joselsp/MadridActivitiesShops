@@ -15,11 +15,12 @@ class ExecuteOnceInteractorImpl: ExecuteOnceInteractor {
         self.elementTypeKey = elementTypeKey
     }
     
-    func execute(closure: () -> Void) {
+    func execute(closure: () -> Void, cached: () -> Void) {
         let defaults = UserDefaults.standard
         
         if let _ = defaults.string(forKey: elementTypeKey) {
             // already saved
+            cached()
         } else {    // first time
             closure()
         }

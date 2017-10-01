@@ -18,32 +18,9 @@ class MapActivityListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        ExecuteOnceInteractorImpl(elementTypeKey: Constant.activityTypeKey).execute {
-            initializeData()
-        }
         
         self.activityCollectionView.delegate = self
         self.activityCollectionView.dataSource = self
-    }
-    
-    func initializeData() {
-        let downloadActivityInteractor: DownloadAllActivitiesInteractor = DownloadAllActivitiesInteractorNSURLSessionImpl()
-        
-        downloadActivityInteractor.execute { (activities: Activities) in
-            
-            let cacheInteractor = SaveAllActivitiesInteractorImpl()
-            cacheInteractor.execute(activities: activities, context: self.context, onSuccess: { (activities: Activities)
-                in
-                
-                SetExecutedOnceInteractorImpl(elementTypeKey: Constant.activityTypeKey).execute()
-                
-                self._fetchedResultsController = nil
-                self.activityCollectionView.delegate = self
-                self.activityCollectionView.dataSource = self
-                self.activityCollectionView.reloadData()
-            })
-        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

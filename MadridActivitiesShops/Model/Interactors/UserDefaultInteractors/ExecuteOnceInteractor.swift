@@ -10,5 +10,5 @@ import Foundation
 
 protocol ExecuteOnceInteractor {
     var elementTypeKey: String { get }
-    func execute(closure: () -> Void)
+    func execute(closure: () -> Void, cached: () -> Void)
 }

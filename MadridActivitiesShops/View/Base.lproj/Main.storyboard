@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -140,27 +141,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wir-rk-Cir">
-                                <rect key="frame" x="156" y="378" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Activities"/>
-                                <connections>
-                                    <segue destination="iBA-ww-CB4" kind="show" identifier="ShowActivitiesSegue" id="kND-C9-uq9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayV-gs-brJ">
-                                <rect key="frame" x="164" y="207" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayV-gs-brJ">
+                                <rect key="frame" x="165" y="275.5" width="44" height="30"/>
                                 <state key="normal" title="Shops"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="ShowShopsSegue" id="2qt-HJ-qjt"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Vve-Jg-abE">
+                                <rect key="frame" x="177" y="355.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wir-rk-Cir">
+                                <rect key="frame" x="156" y="425.5" width="63" height="30"/>
+                                <state key="normal" title="Activities"/>
+                                <connections>
+                                    <segue destination="iBA-ww-CB4" kind="show" identifier="ShowActivitiesSegue" id="kND-C9-uq9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wir-rk-Cir" firstAttribute="top" secondItem="Vve-Jg-abE" secondAttribute="bottom" constant="50" id="6bv-KA-Ixi"/>
+                            <constraint firstItem="Vve-Jg-abE" firstAttribute="top" secondItem="ayV-gs-brJ" secondAttribute="bottom" constant="50" id="A3g-LH-woL"/>
+                            <constraint firstItem="Vve-Jg-abE" firstAttribute="centerX" secondItem="6OG-Ay-yOX" secondAttribute="centerX" id="EE4-oW-6HO"/>
+                            <constraint firstItem="wir-rk-Cir" firstAttribute="centerX" secondItem="6OG-Ay-yOX" secondAttribute="centerX" id="KVl-dO-6YD"/>
+                            <constraint firstItem="Vve-Jg-abE" firstAttribute="centerY" secondItem="6OG-Ay-yOX" secondAttribute="centerY" id="fSl-iP-gCe"/>
+                            <constraint firstItem="ayV-gs-brJ" firstAttribute="centerX" secondItem="6OG-Ay-yOX" secondAttribute="centerX" id="zJ1-AF-BsB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6OG-Ay-yOX"/>
                     </view>
                     <navigationItem key="navigationItem" title="¡MAD!" id="JZL-gx-2hM"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Vve-Jg-abE" id="4uw-zo-otu"/>
+                        <outlet property="showActivitiesButton" destination="wir-rk-Cir" id="78W-Tz-y4L"/>
+                        <outlet property="showShopsButton" destination="ayV-gs-brJ" id="dGc-qn-T5U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBt-Kd-Qg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

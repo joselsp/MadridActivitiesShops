@@ -51,6 +51,7 @@
 		DF5762FA1F7FB2B500690C55 /* DownloadAllShopsInteractorFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5762F91F7FB2B500690C55 /* DownloadAllShopsInteractorFakeImpl.swift */; };
 		DF5762FC1F7FB33800690C55 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5762FB1F7FB33800690C55 /* Typealias.swift */; };
 		DF5762FF1F7FB3B900690C55 /* DownloadAllActivitiesInteractorFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5762FE1F7FB3B900690C55 /* DownloadAllActivitiesInteractorFakeImpl.swift */; };
+		DFA4E6971F81091E00B7FEBC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA4E6961F81091E00B7FEBC /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +83,7 @@
 		DF1FAE451F80065200476BA6 /* DownloadAllActivitiesInteractorNSURLSessionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllActivitiesInteractorNSURLSessionImpl.swift; sourceTree = "<group>"; };
 		DF1FAE491F80093700476BA6 /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
 		DF1FAE4B1F80098300476BA6 /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
-		DF1FD8181F80D9E200BE999C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		DF1FD8181F80D9E200BE999C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DF20CCD01F801F9B00C99F59 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		DF20CCD31F80206300C99F59 /* MadridActivityShops.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MadridActivityShops.xcdatamodel; sourceTree = "<group>"; };
 		DF20CCD61F802D1800C99F59 /* MapShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShops.swift; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 		DF5762F91F7FB2B500690C55 /* DownloadAllShopsInteractorFakeImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorFakeImpl.swift; sourceTree = "<group>"; };
 		DF5762FB1F7FB33800690C55 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		DF5762FE1F7FB3B900690C55 /* DownloadAllActivitiesInteractorFakeImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllActivitiesInteractorFakeImpl.swift; sourceTree = "<group>"; };
+		DFA4E6961F81091E00B7FEBC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		F5AF2A0F688EAB0E93CF3227 /* Pods_MadridActivitiesShops.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MadridActivitiesShops.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -315,6 +317,7 @@
 				DF1FAE3A1F7FFFAA00476BA6 /* Constant.swift */,
 				DF1FAE411F8003CA00476BA6 /* String+Image.swift */,
 				DF20CCD01F801F9B00C99F59 /* CoreDataStack.swift */,
+				DFA4E6961F81091E00B7FEBC /* Reachability.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 			files = (
 				DF1FAE4C1F80098300476BA6 /* ActivityDetailViewController.swift in Sources */,
 				DF20CCDE1F802EA200C99F59 /* SaveAllActivitiesInteractor.swift in Sources */,
+				DFA4E6971F81091E00B7FEBC /* Reachability.swift in Sources */,
 				DF1FAE441F8005B300476BA6 /* DownloadAllShopsInteractorNSURLSessionImpl.swift in Sources */,
 				DF5762F01F7FAA4800690C55 /* Activity.swift in Sources */,
 				DF1FAE3E1F80007D00476BA6 /* JSONParser.swift in Sources */,

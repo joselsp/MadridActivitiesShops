@@ -35,7 +35,6 @@ extension String {
                     if error == nil {
                         // OK
                         let fileName = url.lastPathComponent
-                        print("FileName \(fileName)")
                         imageView.sd_setImage(with: url, placeholderImage: UIImage(contentsOfFile: fileName), completed: { (image: UIImage?, error: Error?, cacheType: SDImageCacheType, imageURL: URL?) in
                             if error == nil {
                                 imageView.image = image
