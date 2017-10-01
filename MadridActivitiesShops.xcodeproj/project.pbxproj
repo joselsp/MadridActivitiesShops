@@ -37,6 +37,8 @@
 		DF20CCE81F803B2000C99F59 /* SetExecutedOnceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20CCE71F803B2000C99F59 /* SetExecutedOnceInteractor.swift */; };
 		DF2361541F803F5D005149CA /* ExecuteOnceInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2361531F803F5D005149CA /* ExecuteOnceInteractorImpl.swift */; };
 		DF2361561F804050005149CA /* SetExecutedOnceInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2361551F804050005149CA /* SetExecutedOnceInteractorImpl.swift */; };
+		DF3628391F812073006EE8AB /* MapShopListViewController+MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3628381F812073006EE8AB /* MapShopListViewController+MapViewController.swift */; };
+		DF36283B1F812479006EE8AB /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36283A1F812479006EE8AB /* Annotations.swift */; };
 		DF5762C71F7FA0F800690C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5762C61F7FA0F800690C55 /* AppDelegate.swift */; };
 		DF5762C91F7FA0F800690C55 /* MapShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5762C81F7FA0F800690C55 /* MapShopListViewController.swift */; };
 		DF5762CC1F7FA0F800690C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5762CA1F7FA0F800690C55 /* Main.storyboard */; };
@@ -52,6 +54,7 @@
 		DF5762FC1F7FB33800690C55 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5762FB1F7FB33800690C55 /* Typealias.swift */; };
 		DF5762FF1F7FB3B900690C55 /* DownloadAllActivitiesInteractorFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5762FE1F7FB3B900690C55 /* DownloadAllActivitiesInteractorFakeImpl.swift */; };
 		DFA4E6971F81091E00B7FEBC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA4E6961F81091E00B7FEBC /* Reachability.swift */; };
+		DFD386221F814CBE00D5DADF /* MapActivityListViewController+MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD386211F814CBE00D5DADF /* MapActivityListViewController+MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,8 @@
 		DF20CCE71F803B2000C99F59 /* SetExecutedOnceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExecutedOnceInteractor.swift; sourceTree = "<group>"; };
 		DF2361531F803F5D005149CA /* ExecuteOnceInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteOnceInteractorImpl.swift; sourceTree = "<group>"; };
 		DF2361551F804050005149CA /* SetExecutedOnceInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExecutedOnceInteractorImpl.swift; sourceTree = "<group>"; };
+		DF3628381F812073006EE8AB /* MapShopListViewController+MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapShopListViewController+MapViewController.swift"; sourceTree = "<group>"; };
+		DF36283A1F812479006EE8AB /* Annotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
 		DF5762C31F7FA0F800690C55 /* MadridActivitiesShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridActivitiesShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5762C61F7FA0F800690C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF5762C81F7FA0F800690C55 /* MapShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShopListViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +120,7 @@
 		DF5762FB1F7FB33800690C55 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		DF5762FE1F7FB3B900690C55 /* DownloadAllActivitiesInteractorFakeImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllActivitiesInteractorFakeImpl.swift; sourceTree = "<group>"; };
 		DFA4E6961F81091E00B7FEBC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		DFD386211F814CBE00D5DADF /* MapActivityListViewController+MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapActivityListViewController+MapViewController.swift"; sourceTree = "<group>"; };
 		F5AF2A0F688EAB0E93CF3227 /* Pods_MadridActivitiesShops.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MadridActivitiesShops.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -252,8 +258,10 @@
 				DF0C73681F7FD4370073DEC7 /* MainViewController.swift */,
 				DF5762C81F7FA0F800690C55 /* MapShopListViewController.swift */,
 				DF0C73661F7FC8320073DEC7 /* MapShopListViewController+CollectionViewController.swift */,
+				DF3628381F812073006EE8AB /* MapShopListViewController+MapViewController.swift */,
 				DF0C73721F7FEB6E0073DEC7 /* MapActivityListViewController.swift */,
 				DF0C73741F7FED530073DEC7 /* MapActivityListViewController+CollectionViewController.swift */,
+				DFD386211F814CBE00D5DADF /* MapActivityListViewController+MapViewController.swift */,
 				DF1FAE491F80093700476BA6 /* ShopDetailViewController.swift */,
 				DF1FAE4B1F80098300476BA6 /* ActivityDetailViewController.swift */,
 			);
@@ -318,6 +326,7 @@
 				DF1FAE411F8003CA00476BA6 /* String+Image.swift */,
 				DF20CCD01F801F9B00C99F59 /* CoreDataStack.swift */,
 				DFA4E6961F81091E00B7FEBC /* Reachability.swift */,
+				DF36283A1F812479006EE8AB /* Annotations.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -494,6 +503,7 @@
 			files = (
 				DF1FAE4C1F80098300476BA6 /* ActivityDetailViewController.swift in Sources */,
 				DF20CCDE1F802EA200C99F59 /* SaveAllActivitiesInteractor.swift in Sources */,
+				DF36283B1F812479006EE8AB /* Annotations.swift in Sources */,
 				DFA4E6971F81091E00B7FEBC /* Reachability.swift in Sources */,
 				DF1FAE441F8005B300476BA6 /* DownloadAllShopsInteractorNSURLSessionImpl.swift in Sources */,
 				DF5762F01F7FAA4800690C55 /* Activity.swift in Sources */,
@@ -508,6 +518,7 @@
 				DF5762FC1F7FB33800690C55 /* Typealias.swift in Sources */,
 				DF0C73771F7FEECC0073DEC7 /* ShopCell.swift in Sources */,
 				DF0C73751F7FED530073DEC7 /* MapActivityListViewController+CollectionViewController.swift in Sources */,
+				DFD386221F814CBE00D5DADF /* MapActivityListViewController+MapViewController.swift in Sources */,
 				DF2361541F803F5D005149CA /* ExecuteOnceInteractorImpl.swift in Sources */,
 				DF0C73731F7FEB6E0073DEC7 /* MapActivityListViewController.swift in Sources */,
 				DF0C73691F7FD4370073DEC7 /* MainViewController.swift in Sources */,
@@ -519,6 +530,7 @@
 				DF5762EA1F7FA38D00690C55 /* Shop.swift in Sources */,
 				DF1FAE3B1F7FFFAA00476BA6 /* Constant.swift in Sources */,
 				DF20CCE81F803B2000C99F59 /* SetExecutedOnceInteractor.swift in Sources */,
+				DF3628391F812073006EE8AB /* MapShopListViewController+MapViewController.swift in Sources */,
 				DF5762F21F7FAC6900690C55 /* Activities.swift in Sources */,
 				DF5762C91F7FA0F800690C55 /* MapShopListViewController.swift in Sources */,
 				DF0C73711F7FEA4B0073DEC7 /* DownloadAllShopsInteractor.swift in Sources */,

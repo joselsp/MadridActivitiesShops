@@ -13,7 +13,6 @@ class SaveAllShopsInteractorImpl: SaveAllShopsInteractor {
         
         for i in 0 ..< shops.count() {
             let shop = shops.get(index: i)
-            
             // mapping shop into ShopCD
             let _ = mapShopIntoShopCD(context: context, shop: shop)
         }

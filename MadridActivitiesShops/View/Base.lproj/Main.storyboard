@@ -55,7 +55,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="D5Z-aN-Qst">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5Z-aN-Qst">
                                 <rect key="frame" x="0.0" y="64" width="375" height="301.5"/>
                             </mapView>
                         </subviews>
@@ -75,6 +75,7 @@
                     <navigationItem key="navigationItem" title="Shops" id="GHE-pS-733"/>
                     <connections>
                         <outlet property="shopCollectionView" destination="t8T-Qp-ejm" id="cLm-PA-5Pa"/>
+                        <outlet property="shopMap" destination="D5Z-aN-Qst" id="VEa-FV-ajP"/>
                         <segue destination="Mhy-Gk-ekd" kind="show" identifier="ShowShopDetailSegue" id="WiG-Xn-RW8"/>
                     </connections>
                 </viewController>
@@ -226,7 +227,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Gm3-if-Dgo">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gm3-if-Dgo">
                                 <rect key="frame" x="0.0" y="64" width="375" height="301.5"/>
                             </mapView>
                         </subviews>
@@ -246,6 +247,7 @@
                     <navigationItem key="navigationItem" title="Activities" id="qW3-Ox-SYl"/>
                     <connections>
                         <outlet property="activityCollectionView" destination="WXV-sp-5Dg" id="O8A-H7-tRk"/>
+                        <outlet property="activityMap" destination="Gm3-if-Dgo" id="LMP-fH-pz9"/>
                         <segue destination="6ws-9I-2vf" kind="show" identifier="ShowActivityDetailSegue" id="dKB-9k-pod"/>
                     </connections>
                 </viewController>

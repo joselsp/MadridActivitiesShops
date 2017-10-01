@@ -8,19 +8,35 @@
 
 import UIKit
 import CoreData
+import CoreLocation
+import MapKit
 
-class MapActivityListViewController: UIViewController {
+class MapActivityListViewController: UIViewController, CLLocationManagerDelegate {
 
-    var activities: Activities?
     var context: NSManagedObjectContext!
     
     @IBOutlet weak var activityCollectionView: UICollectionView!
+    @IBOutlet weak var activityMap: MKMapView!    
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.delegate = self
+        self.locationManager.startUpdatingLocation()
+        self.activityMap.showsUserLocation = true
+        
+        self.addActivityAnnotations()
+        
         self.activityCollectionView.delegate = self
         self.activityCollectionView.dataSource = self
+        
+        let madridLocation = CLLocation(latitude:40.41889 , longitude: -3.69194)
+        let madridRegion = MKCoordinateRegion(center: madridLocation.coordinate, span:
+            MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+        
+        self.activityMap.setRegion(madridRegion, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

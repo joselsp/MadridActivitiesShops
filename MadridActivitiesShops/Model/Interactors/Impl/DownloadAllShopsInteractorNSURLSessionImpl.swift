@@ -24,6 +24,7 @@ class DownloadAllShopsInteractorNSURLSessionImpl: DownloadAllShopsInteractor {
                         // OK
                         
                         let shops = parseShops(data: data!)
+                        
                         onSuccess(shops)
                     } else {
                         // Error

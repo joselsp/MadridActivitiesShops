@@ -8,18 +8,35 @@
 
 import UIKit
 import CoreData
+import CoreLocation
+import MapKit
 
-class MapShopListViewController: UIViewController {
+class MapShopListViewController: UIViewController, CLLocationManagerDelegate  {
     
     var context: NSManagedObjectContext!
 
     @IBOutlet weak var shopCollectionView: UICollectionView!
+    @IBOutlet weak var shopMap: MKMapView!
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.delegate = self
+        self.locationManager.startUpdatingLocation()
+        self.shopMap.showsUserLocation = true
+        
+        self.addShopAnnotations()
+        
         self.shopCollectionView.delegate = self
         self.shopCollectionView.dataSource = self
+        
+        let madridLocation = CLLocation(latitude:40.41889 , longitude: -3.69194)
+        let madridRegion = MKCoordinateRegion(center: madridLocation.coordinate, span:
+                              MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+
+        self.shopMap.setRegion(madridRegion, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

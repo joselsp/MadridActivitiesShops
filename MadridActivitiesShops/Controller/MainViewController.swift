@@ -52,7 +52,6 @@ class MainViewController: UIViewController {
         let downloadShopInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorNSURLSessionImpl()
         
         downloadShopInteractor.execute (onSuccess: { (shops: Shops) in
-            
             let cacheInteractor = SaveAllShopsInteractorImpl()
             cacheInteractor.execute(shops: shops, context: self.context, onSuccess: { (shops: Shops)
                 in
