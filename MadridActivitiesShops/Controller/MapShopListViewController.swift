@@ -29,9 +29,10 @@ class MapShopListViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowShopDetailSegue" {
+            let vc = segue.destination as! ShopDetailViewController
             
-            let vc = segue.destination as! ShopDetailViewController            
-            vc.shop = sender as! Shop
+            let shopCD: ShopCD = sender as! ShopCD
+            vc.shop = mapShopCDIntoShop(shopCD: shopCD)
         }
     }
     
