@@ -26,8 +26,9 @@ class MapShopListViewController: UIViewController, CLLocationManagerDelegate  {
         self.locationManager.delegate = self
         self.locationManager.startUpdatingLocation()
         self.shopMap.showsUserLocation = true
+        self.shopMap.delegate = self
         
-        self.addShopAnnotations()
+//        self.addShopAnnotations()
         
         self.shopCollectionView.delegate = self
         self.shopCollectionView.dataSource = self

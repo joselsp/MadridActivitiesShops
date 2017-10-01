@@ -159,6 +159,24 @@
                                     <segue destination="iBA-ww-CB4" kind="show" identifier="ShowActivitiesSegue" id="kND-C9-uq9"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Dh-Qc-hm4">
+                                <rect key="frame" x="67" y="97" width="166" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShopLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aau-Id-6Uu">
+                                <rect key="frame" x="104" y="109" width="166" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="pFb-o5-pTM"/>
+                                    <constraint firstAttribute="width" constant="166" id="wp9-sx-IGV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ActivityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="IH9-7g-Zwj">
+                                <rect key="frame" x="72" y="483" width="231" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="4iz-Jn-t3U"/>
+                                    <constraint firstAttribute="width" constant="231" id="5Nr-u8-Zn1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -167,6 +185,10 @@
                             <constraint firstItem="Vve-Jg-abE" firstAttribute="centerX" secondItem="6OG-Ay-yOX" secondAttribute="centerX" id="EE4-oW-6HO"/>
                             <constraint firstItem="wir-rk-Cir" firstAttribute="centerX" secondItem="6OG-Ay-yOX" secondAttribute="centerX" id="KVl-dO-6YD"/>
                             <constraint firstItem="Vve-Jg-abE" firstAttribute="centerY" secondItem="6OG-Ay-yOX" secondAttribute="centerY" id="fSl-iP-gCe"/>
+                            <constraint firstItem="6OG-Ay-yOX" firstAttribute="bottom" secondItem="IH9-7g-Zwj" secondAttribute="bottom" constant="51" id="lOV-RJ-3DL"/>
+                            <constraint firstItem="IH9-7g-Zwj" firstAttribute="centerX" secondItem="6OG-Ay-yOX" secondAttribute="centerX" id="nRM-d2-WGY"/>
+                            <constraint firstItem="aau-Id-6Uu" firstAttribute="centerX" secondItem="6OG-Ay-yOX" secondAttribute="centerX" id="nwS-Ds-uTZ"/>
+                            <constraint firstItem="aau-Id-6Uu" firstAttribute="top" secondItem="6OG-Ay-yOX" secondAttribute="top" constant="45" id="xiV-qi-9Ta"/>
                             <constraint firstItem="ayV-gs-brJ" firstAttribute="centerX" secondItem="6OG-Ay-yOX" secondAttribute="centerX" id="zJ1-AF-BsB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6OG-Ay-yOX"/>
@@ -289,4 +311,8 @@
             <point key="canvasLocation" x="2180" y="532.98350824587715"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ActivityLogo" width="400" height="241"/>
+        <image name="ShopLogo" width="1284" height="855"/>
+    </resources>
 </document>

@@ -26,8 +26,7 @@ class MapActivityListViewController: UIViewController, CLLocationManagerDelegate
         self.locationManager.delegate = self
         self.locationManager.startUpdatingLocation()
         self.activityMap.showsUserLocation = true
-        
-        self.addActivityAnnotations()
+        self.activityMap.delegate = self
         
         self.activityCollectionView.delegate = self
         self.activityCollectionView.dataSource = self
